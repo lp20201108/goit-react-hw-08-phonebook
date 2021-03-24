@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addContact } from "../../redux/operations";
-import { getContacts } from "../../redux/contacts-selectors";
+import { addContact } from "../../redux/contacts/contacts-operations";
+import { getContacts } from "../../redux/contacts/contacts-selectors";
 import styles from "./ContactForm.module.css";
 
 class ContactForm extends Component {

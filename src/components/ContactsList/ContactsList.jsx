@@ -1,9 +1,8 @@
-import { uuid } from "uuidv4";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import ContactListItem from "../ContactListItem/ContactListItem";
 import styles from "./ContactsList.module.css";
-import { removeContact } from "../../redux/operations";
+import { removeContact } from "../../redux/contacts/contacts-operations";
 
 const ContactsList = ({ contacts, handleRemove }) => {
   // if (!contacts.length) {

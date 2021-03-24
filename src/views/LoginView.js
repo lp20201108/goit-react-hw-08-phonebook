@@ -15,6 +15,7 @@ const styles = {
     margin: "0 auto",
   },
 };
+
 class LoginView extends Component {
   state = {
     email: "",
@@ -38,7 +39,7 @@ class LoginView extends Component {
 
     return (
       <div styles={styles.container}>
-        <h1>Log in page</h1>
+        <h1 className={styles.title}>Log in page</h1>
 
         <form
           onSubmit={this.handleSubmit}

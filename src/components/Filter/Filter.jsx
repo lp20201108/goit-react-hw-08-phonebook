@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Filter.module.css";
 import { connect } from "react-redux";
-import { changeFilter } from "../../redux/actions";
-import { getFilter } from "../../redux/contacts-selectors";
+import { changeFilter } from "../../redux/contacts/contacts-actions";
+import { getFilter } from "../../redux//contacts/contacts-selectors";
 
 const Filter = ({ filter, handleChange }) => {
   return (
