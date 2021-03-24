@@ -21,7 +21,7 @@ const fecthContacts = () => async (dispatch) => {
     console.log(data);
     dispatch(fecthContactsSuccess(data));
   } catch (error) {
-    dispatch(fecthContactsError(error));
+    dispatch(fecthContactsError(error.message));
   }
 };
 
@@ -39,7 +39,7 @@ const addContact = ({ name, number }) => async (dispatch) => {
     console.log(data);
     dispatch(addContactSuccess(data));
   } catch (error) {
-    dispatch(addContactError(error));
+    dispatch(addContactError(error.message));
   }
 };
 
@@ -49,7 +49,7 @@ const removeContact = (id) => async (dispatch) => {
     await axios.delete(`/contacts/${id}`);
     dispatch(removeContactSuccess(id));
   } catch (error) {
-    dispatch(removeContactError(error));
+    dispatch(removeContactError(error.message));
   }
 };
 
