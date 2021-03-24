@@ -11,6 +11,9 @@ const styles = {
     flexDirection: "column",
     marginBottom: 15,
   },
+  container: {
+    margin: "0 auto",
+  },
 };
 class LoginView extends Component {
   state = {
@@ -34,8 +37,8 @@ class LoginView extends Component {
     const { email, password } = this.state;
 
     return (
-      <div>
-        <h1>Sign in page</h1>
+      <div styles={styles.container}>
+        <h1>Log in page</h1>
 
         <form
           onSubmit={this.handleSubmit}
@@ -62,7 +65,7 @@ class LoginView extends Component {
             />
           </label>
 
-          <button type="submit">Sign in</button>
+          <button type="submit">Log in</button>
         </form>
       </div>
     );

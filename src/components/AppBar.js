@@ -10,7 +10,9 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    borderBottom: "1px solid #2A363B",
+    backgroundColor: "rgb(255,210,81)",
+    boxShadow:
+      "box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254,63,71,0.2);",
   },
 };
 

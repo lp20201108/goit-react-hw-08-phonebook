@@ -12,7 +12,7 @@ import {
 
 // import logger from "redux-logger";
 import storage from "redux-persist/lib/storage";
-import contactsReducer from "./reducer";
+import contactsReducer from "./contacts/contacts-reducer";
 import authReducer from "../redux/auth/auth-reducer";
 
 const middleware = [

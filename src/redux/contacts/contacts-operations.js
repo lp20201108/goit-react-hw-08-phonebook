@@ -10,7 +10,7 @@ import {
   removeContactError,
   removeContactRequest,
   removeContactSuccess,
-} from "./actions";
+} from "./contacts-actions.js";
 
 // axios.defaults.baseURL = "http://localhost:3004";
 

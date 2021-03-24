@@ -5,8 +5,11 @@ import ContactsList from "../components/ContactsList";
 import Filter from "../components/Filter/Filter";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import styles from "../components/App.module.css";
-import { fecthContacts } from "../redux/operations";
-import { getVisibleContacts, getLoading } from "../redux/contacts-selectors";
+import { fecthContacts } from "../redux/contacts/contacts-operations";
+import {
+  getVisibleContacts,
+  getLoading,
+} from "../redux/contacts/contacts-selectors";
 import Spinner from "../components/Spinner/Spinner";
 
 class ContactsView extends Component {

@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- background-color: aliceblue;
+ background-color:#fff7f0;
 }
 
 
@@ -17,6 +17,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+
 }
 
 ul,
