@@ -87,3 +87,14 @@ code {
 .contactForm{
   display: flex;
 }
+
+input{
+  border-radius: 5px;
+  border:solid 0.5px;
+  outline: none;
+}
+
+
+input:focus{
+border: solid 1px #fee8d0;
+}

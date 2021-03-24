@@ -11,6 +11,21 @@ const styles = {
     flexDirection: "column",
     marginBottom: 15,
   },
+  container: {
+    width: 320,
+    margin: "0 auto",
+    marginTop: 20,
+  },
+
+  title: {
+    marginBottom: 15,
+  },
+
+  button: {
+    margin: "0 auto",
+    display: "flex",
+    marginTop: 25,
+  },
 };
 
 class RegisterView extends Component {
@@ -36,8 +51,8 @@ class RegisterView extends Component {
     const { name, email, password } = this.state;
 
     return (
-      <div>
-        <h1>Register</h1>
+      <div style={styles.container}>
+        <h1 style={styles.title}>Register</h1>
 
         <form
           onSubmit={this.handleSubmit}
@@ -74,7 +89,9 @@ class RegisterView extends Component {
             />
           </label>
 
-          <button type="submit">Register</button>
+          <button style={styles.button} type="submit">
+            Register
+          </button>
         </form>
       </div>
     );
